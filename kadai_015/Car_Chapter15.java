@@ -27,7 +27,6 @@ public class Car_Chapter15 {
 		
 		System.out.println("速度は時速" + this.speed + "kmです");
 		
-		System.out.println(this.gear + this.speed);
 	}
 	
 }
