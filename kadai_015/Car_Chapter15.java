@@ -9,14 +9,16 @@ public class Car_Chapter15 {
 	
 	public void changeGear(int afterGear) {
 		
+		int beforGear = this.gear;
+		this.gear     = afterGear;
 		
 		
-		System.out.println("ギア" + gear + "から" + afterGear + "に切り替えました");
+		System.out.println("ギア" + beforGear + "から" + afterGear + "に切り替えました");
 		
-		if (afterGear < 1 || afterGear > 5) {
+		if (this.gear < 1 || this.gear > 5) {
 			this.speed = 10;
 		} else {
-			this.speed = afterGear * 10;
+			this.speed = this.gear * 10;
 		}
 	} 
 	
@@ -25,7 +27,7 @@ public class Car_Chapter15 {
 		
 		System.out.println("速度は時速" + this.speed + "kmです");
 		
-		//System.out.println(this.gear + this.speed);
+		System.out.println(this.gear + this.speed);
 	}
 	
 }
